@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [workForceJunction]" parallel="tests">
+  <listeners>
+    <listener class-name="tests.Listners"/>
+    <listener class-name="tests.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="1" name="basic information plan setup(failed)" parallel="tests">
+    <classes>
+      <class name="tests.TestBasic_Information_PlanSetup">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="loginDemo"/>
+          <include name="Clientlink"/>
+          <include name="EnterBasic_Information_PlanSetup"/>
+          <include name="quit"/>
+          <include name="EligibilityandEnrollment"/>
+          <include name="ESScompany"/>
+        </methods>
+      </class> <!-- tests.TestBasic_Information_PlanSetup -->
+    </classes>
+  </test> <!-- basic information plan setup(failed) -->
+</suite> <!-- Failed suite [workForceJunction] -->

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke testing]">
+  <listeners>
+    <listener class-name="tests.Listners"/>
+    <listener class-name="tests.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="basic information plan setup(failed)">
+    <classes>
+      <class name="tests.TestBasic_Information_PlanSetup">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="loginDemo"/>
+          <include name="Clientlink"/>
+          <include name="EnterBasic_Information_PlanSetup"/>
+          <include name="quit"/>
+          <include name="EligibilityandEnrollment"/>
+          <include name="ESScompany"/>
+        </methods>
+      </class> <!-- tests.TestBasic_Information_PlanSetup -->
+    </classes>
+  </test> <!-- basic information plan setup(failed) -->
+</suite> <!-- Failed suite [Smoke testing] -->

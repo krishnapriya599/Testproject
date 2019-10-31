@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="1" name="workForceJunction" annotations="JDK" parallel="tests">
+	<listeners>
+		<listener class-name="tests.Listners" />
+		<listener class-name="tests.ExtentReporterNG" />
+	</listeners>
+	<test name="Create a PlanSetup">
+		<classes>
+			<class name="tests.Testcreate_Plan_Setup" />
+		</classes>
+	</test>
+	<test name="basic information plan setup">
+		<classes>
+			<class name="tests.TestBasic_Information_PlanSetup" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
